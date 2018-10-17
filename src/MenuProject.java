@@ -37,6 +37,7 @@ public class MenuProject {
             		}
             		break;
             	case 2:
+            		
             		System.out.println("Do you want to finish or do you want another option? Enter 0 to finish or another number to continue");
             		int continue2 = sc.nextInt();
             		if (continue2 < 1) {
@@ -67,6 +68,7 @@ public class MenuProject {
             		}
             		break;
             	case 5:
+            		
             		System.out.println("Do you want to finish or do you want another option? Enter 0 to finish or another number to continue");
             		int continue5 = sc.nextInt();
             		if (continue5 < 1) {
@@ -81,6 +83,23 @@ public class MenuProject {
             		}
             		break;
             	case 7:
+            		System.out.println("Enter a word:");
+            		String st7 = sc.next();
+            		int inc = 0;
+            		int des = st7.length()-1;
+            		boolean bool7 = false;
+            		while ((inc < des) && (!bool7)){
+            			if (st7.charAt(inc) == st7.charAt(des)){				
+            				inc++;
+            				des--;
+            			} else {
+            				bool7 = true;
+            			}
+            		}
+            		if (!bool7)
+            			System.out.println(st7 + " is a palindrome");
+            		else
+            			System.out.println(st7 + " is not a palindrome");
             		System.out.println("Do you want to finish or do you want another option? Enter 0 to finish or another number to continue");
             		int continue7 = sc.nextInt();
             		if (continue7 < 1) {
